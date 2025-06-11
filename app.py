@@ -39,7 +39,6 @@ else:
         if st.button("Add Task"):
             session.add(Task(title=new_task, user_id=current_user.id))
             session.commit()
-            st.experimental_rerun()
 
     elif menu == "Leave":
         st.subheader("Apply for Leave")
